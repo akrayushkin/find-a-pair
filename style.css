@@ -1,0 +1,147 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.game {
+  width: 515px;
+  margin: 0 auto;  
+  
+  text-align: center;
+}
+.game__options-wrapper {
+  display: flex;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+  
+  padding-bottom: 10px;
+  
+  border-bottom: 1px solid #000000;
+}
+.game__options {
+  width: 190px;
+  padding: 0;
+    
+  border: 0 none; 
+}
+.game__options-radio,
+.game__options-label {
+  cursor: pointer;  
+}
+.game__options-list {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;    
+}
+.game__button {
+  padding: 10px;
+  cursor: pointer;
+}
+.game__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  width: 505px;
+  padding: 5px;
+  
+  list-style: none;  
+}
+.game__item {
+  position: relative;
+  width: 80px;
+  height: 120px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  
+  cursor: pointer;
+}
+.game__item--empty {
+  background-color: #1C8775;
+  cursor: default;  
+}
+.game__item:nth-child(6n) {
+  margin-right: 0;
+}
+.game__item-image {
+  position: absolute;
+  left: 0;
+  top: 0;  
+}
+.game__item-shirt {
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal__box {
+  position: fixed;
+  top: 160px;
+  left: 50%;
+  width: 400px;
+  height: 510px;
+  padding-top: 20px;
+  margin-left: -200px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.modal__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("img/close-cross.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.modal__logo {
+  position: absolute;
+  left: 50%;
+  
+  width: 175px;
+  height: 175px;
+  margin-left: -98px;
+  
+  border-radius: 50%;
+  border: 10px solid #e7e7e7;
+  overflow: hidden;
+  text-align: center;
+
+  outline: none;
+}
+.modal__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  text-align: center;
+
+  outline: none;
+}

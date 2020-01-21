@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Game - Open a pair</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  </head>
+  <body>
+    <h1 class="visually-hidden">Любимая игра Зинаиды Афанасеевны</h1>    
+    <main>
+      <section class="game">
+        <h2 class="game__title">Игра "Открой пару"</h2>
+        <div class="game__options-wrapper">
+          <fieldset class="game__options">
+            <legend class="game__options-title">Выберите количество карт:</legend>
+            <ul class="game__options-list">
+              <li class="game__options-item">
+                <input class="game__options-radio" id="radio-qty24" type="radio" name="radio-qty" value="24">
+                <label class="game__options-label" for="radio-qty24">24</label>
+              </li>
+              <li class="game__options-item">
+                <input class="game__options-radio" id="radio-qty30" type="radio" name="radio-qty" value="30" checked="">
+                <label class="game__options-label" for="radio-qty30">30</label>
+              </li>
+              <li class="game__options-item">
+                <input class="game__options-radio" id="radio-qty36" type="radio" name="radio-qty" value="36">
+                <label class="game__options-label" for="radio-qty36">36</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="game__options">
+            <legend class="game__options-title">Timer:</legend>
+            <div class="game__timer">
+              <span class="game__timer-minutes">04</span> :
+              <span class="game__timer-seconds">00</span>
+            </div>
+          </fieldset>
+          <button class="game__button" type="button" name="button_new_game">Новая игра</button>
+        </div>  
+        <ul class="game__list">
+        </ul>
+      </section>
+    </main>
+    <section class="modal hidden">
+      <div class="modal__box">
+        <div class="modal__logo" tabindex="0">
+            <img class="modal__logo-image" src="img/foto.jpg" alt="Фото создателя игры" width="175" height="175">
+        </div>
+        <img class="modal__image modal__image--win hidden" src="img/сongratulations.gif" alt="Поздравление с победой" width="400" height="300">
+        <img class="modal__image modal__image--lose hidden" src="img/you-lose.jpg" alt="Вы проиграли" width="400" height="300">
+        <button class="modal__close-button" type="button">Закрыть</button>
+      </div>
+    </section>
+    <script src="js/util.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loser.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/compare-cards.js"></script>
+    <script src="js/card-set.js"></script>
+    <script src="js/fill-playing-field.js"></script>
+    <script src="js/start-new-game.js"></script>
+  </body>
+</html>  
