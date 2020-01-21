@@ -4,3 +4,6 @@
 
 **!!! Использовать синтаксис ES5.**
 
+
+**GitHub Pages:** https://akrayushkin.github.io/find-a-pair/index.html
+
